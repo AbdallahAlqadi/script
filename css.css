@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.calendar-day.current-day {
+    background-color: #e91e63;
+    color: white;
+}
+
+.appointments {
+    margin-top: 20px;
+}
+
+.appointment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.add-appointment {
+    margin-top: 20px;
+}
+
+#add-appointment-form {
+    margin-top: 20px;
+}
+
+#add-appointment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#add-appointment-form input[type="text"],
+#add-appointment-form input[type="date"],
+#add-appointment-form input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#add-appointment-form button {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    
+}
