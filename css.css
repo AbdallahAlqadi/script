@@ -17,8 +17,7 @@ body {
 
 /* Navbar styling */
 .navbar {
-    background-color: #333;
-    position: sticky;
+    background: linear-gradient(90deg, #e6007a, #003366);    position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
@@ -46,7 +45,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #575757;
+    background-color: #e6007a;
 }
 
 /* Animation for navbar */
@@ -70,8 +69,8 @@ body {
 
 /* Footer styling */
 .footer {
-    background-color: #333;
-    color: white;
+    background: linear-gradient(90deg, #e6007a, #003366);
+        color: white;
     text-align: center;
     padding: 15px 0;
     animation: fadeIn 1s ease-in-out;
