@@ -17,7 +17,7 @@ body {
 
 /* Navbar styling */
 .navbar {
-    background: linear-gradient(90deg, #e6007a, #003366);    position: sticky;
+  background: linear-gradient(90deg, #e6007a, #003366);    position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
@@ -30,9 +30,10 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
+/* connect */
 .navbar ul li {
     margin: 0 15px;
+    margin-left: 1200px;
 }
 
 .navbar ul li a {
