@@ -22,19 +22,22 @@ body {
     top: 0;
     z-index: 1000;
     width: 100%;
-    padding: 10px 0;
+    animation: slideDown 0.5s ease-in-out;
+    height: 75px;
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    padding: 0;
+    flex-wrap: wrap;
 }
 
+/* connect */
 .navbar ul li {
-
-margin-left: 1170px;}
+    margin: 0 15px;
+    margin-left: 1200px;
+}
 
 .navbar ul li a {
     color: white;
@@ -49,54 +52,23 @@ margin-left: 1170px;}
     background-color: #e6007a;
 }
 
-/* Carousel styling */
-.carousel {
-    position: relative;
-    max-width: 100%;
-    margin: 20px auto;
-    overflow: hidden;
+/* Animation for navbar */
+@keyframes slideDown {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 100%;
-}
-
-.carousel-item img {
-    width: 40%;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 350px;
-}
-
-/* Carousel controls */
-.carousel-control {
-    position: absolute;
-    top: 30%;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
+/* Content styling */
+.content {
+    flex: 1;
+    padding: 20px;
     text-align: center;
-    line-height: 40px;
-    transform: translateY(-50%);
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
 }
 
 /* Footer styling */
@@ -105,6 +77,19 @@ margin-left: 1170px;}
     color: white;
     text-align: center;
     padding: 15px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for footer */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive styling */
@@ -117,11 +102,37 @@ margin-left: 1170px;}
         margin: 10px 0;
     }
 
-    .carousel-item img {
-        border-radius: 4px;
+    .content {
+        padding: 10px;
     }
 
     .footer {
         padding: 10px 0;
     }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
