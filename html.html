@@ -1,54 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-   
-    <script>
-        function getRandomInt(max) {
-            return Math.floor(Math.random() * (max + 1));
-        }
-
-        const x0 = getRandomInt(8);
-        const y0 = getRandomInt(8);
-
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('random-coordinates').textContent = `The coordination of genarted random point  is  : ${x0}, ${y0}`;
-        });
-
-      
-        function calculateDistance() {
-            const x1 = parseInt(document.getElementById('txt1').value, 10);
-            const y1 = parseInt(document.getElementById('txt2').value, 10);
-
-            if (isNaN(x1) || isNaN(y1)) {
-                alert("Please enter valid coordinates for point 1.");
-                return;
-            }
-
-            const distance = Math.sqrt(Math.pow((x1 - x0), 2) + Math.pow((y1 - y0), 2));
-            document.getElementById('txt3').value = distance.toFixed(2);
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar and Footer with Animation</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
-    <form style="background-color: lightblue;">
-        <label><strong>Coordinate x1:</strong></label>
-        <input type="text" id="txt1">
-        <br><br>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <label><strong>Coordinate y1:</strong></label>
-        <input type="text" id="txt2">
-        <br><br>
+    <!-- Content of the page -->
+    <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>This is an example of a webpage with an animated navbar and footer.</p>
+    </div>
 
-        <label><strong>Distance:</strong></label>
-        <input type="text" id="txt3" readonly>
-        <br><br>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
 
-        <input type="button" onclick="calculateDistance()" value="Calculate Distance" id="bt1">
-        <br><br>
-        <h2  style="color: red;" id="random-coordinates"></h2>
-    </form>
 </body>
 
 </html>

@@ -1,76 +1,128 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f0f0f0;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 20px;
-}
-
-.calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.calendar-day {
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.calendar-day.current-day {
-    background-color: #e91e63;
-    color: white;
-}
-
-.appointments {
-    margin-top: 20px;
-}
-
-.appointment {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.add-appointment {
-    margin-top: 20px;
-}
-
-#add-appointment-form {
-    margin-top: 20px;
-}
-
-#add-appointment-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#add-appointment-form input[type="text"],
-#add-appointment-form input[type="date"],
-#add-appointment-form input[type="time"] {
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+    animation: slideDown 0.5s ease-in-out;
 }
 
-#add-appointment-form button {
-    background-color: #e91e63;
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
     color: white;
-    padding: 10px 20px;
-    border: none;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Animation for navbar */
+@keyframes slideDown {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* Content styling */
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for footer */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
     
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
 }
