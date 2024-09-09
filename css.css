@@ -17,24 +17,24 @@ body {
 
 /* Navbar styling */
 .navbar {
-  background: linear-gradient(90deg, #e6007a, #003366);    position: sticky;
+    background: linear-gradient(90deg, #e6007a, #003366);
+    position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
-    animation: slideDown 0.5s ease-in-out;
+    padding: 10px 0;
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    padding: 0;
 }
-/* connect */
+
 .navbar ul li {
-    margin: 0 15px;
-    margin-left: 1200px;
-}
+
+margin-left: 1170px;}
 
 .navbar ul li a {
     color: white;
@@ -49,44 +49,62 @@ body {
     background-color: #e6007a;
 }
 
-/* Animation for navbar */
-@keyframes slideDown {
-    from {
-        top: -50px;
-        opacity: 0;
-    }
-    to {
-        top: 0;
-        opacity: 1;
-    }
+/* Carousel styling */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
 }
 
-/* Content styling */
-.content {
-    flex: 1;
-    padding: 20px;
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 40%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 350px;
+}
+
+/* Carousel controls */
+.carousel-control {
+    position: absolute;
+    top: 30%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
     text-align: center;
+    line-height: 40px;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 /* Footer styling */
 .footer {
     background: linear-gradient(90deg, #e6007a, #003366);
-        color: white;
+    color: white;
     text-align: center;
     padding: 15px 0;
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Animation for footer */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Responsive styling */
@@ -99,30 +117,11 @@ body {
         margin: 10px 0;
     }
 
-    .content {
-        padding: 10px;
+    .carousel-item img {
+        border-radius: 4px;
     }
 
     .footer {
         padding: 10px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar ul li a {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-
-    .content h1 {
-        font-size: 24px;
-    }
-
-    .content p {
-        font-size: 16px;
-    }
-
-    .footer {
-        font-size: 14px;
     }
 }
