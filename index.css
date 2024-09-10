@@ -71,7 +71,7 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: auto auto ;
-    margin-left: 330px;
+    margin-left: 390px;
 }
 
 /* Footer styling */
@@ -130,7 +130,7 @@ margin-left: -320px;
     background: linear-gradient(90deg, #e6007a, #003366);
     color: #f0f0f0;
     margin-top: 140px;
-    margin-left: 640px;
+    margin-left: 665px;
     margin-bottom: 100px;
 }
 
