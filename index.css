@@ -98,8 +98,22 @@ body {
 /* Responsive styling */
 
 
-@media (max-width: 480px)and(max-width: 768px) {
-   
+@media (max-width: 480px) {
+.content{
+
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 50px;
+}
+
+.button{
+    background-color: aliceblue;
+}
+
+#m2{
+    left: -40px;
+}
+
 }
 
 .button{
@@ -108,7 +122,7 @@ body {
     background: linear-gradient(90deg, #e6007a, #003366);
     color: #f0f0f0;
     margin-top: 140px;
-    margin-left: 635px;
+    margin-left: 640px;
     margin-bottom: 100px;
 }
 
