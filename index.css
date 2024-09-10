@@ -71,7 +71,7 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: auto auto ;
-    margin-left: 300px;
+    margin-left: 330px;
 }
 
 /* Footer styling */
@@ -96,21 +96,19 @@ body {
 }
 
 /* Responsive styling */
-@media (max-width: 768px) {
-    
-}
 
-@media (max-width: 480px) {
+
+@media (max-width: 480px)and(max-width: 768px) {
    
 }
 
 .button{
     width: 200px;
     height: 40px;
-    background-color: #e6007a;
+    background: linear-gradient(90deg, #e6007a, #003366);
     color: #f0f0f0;
     margin-top: 140px;
-    margin-left: 265px;
+    margin-left: 635px;
     margin-bottom: 100px;
 }
 
