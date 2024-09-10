@@ -118,7 +118,11 @@ margin-left: -308px;
 
         margin-left: -540px;
     }
-       
+
+    #connect{
+        margin-right:70px;
+    }
+
 }
 .button{
     width: 200px;
