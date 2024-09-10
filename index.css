@@ -103,19 +103,21 @@ body {
 
     display: grid;
     grid-template-columns: auto;
-    margin-left: 50px;
+    /* margin-left: 40px; */
 }
+
+#m1{
+margin-left: -290px;
+}
+
+#m3{
+    margin-left: -290px;
+    }
 
 .button{
-    background-color: aliceblue;
+    margin-left: -1290px;
 }
-
-#m2{
-    left: -40px;
 }
-
-}
-
 .button{
     width: 200px;
     height: 40px;
