@@ -114,9 +114,11 @@ margin-left: -290px;
     margin-left: -290px;
     }
 
-.button{
-    margin-left: -1290px;
-}
+    .divbutton{
+
+        margin-left: -545px;
+    }
+       
 }
 .button{
     width: 200px;
