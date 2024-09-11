@@ -48,9 +48,18 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.navbar ul li a:hover {
-    background-color: #e6007a;
+
+
+.button{
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(90deg, #e6007a, #003366);
+    color: #f0f0f0;
+    margin-top: 140px;
+    margin-left: 675px;
+    margin-bottom: 100px;
 }
+
 
 /* Animation for navbar */
 @keyframes slideDown {
@@ -126,14 +135,5 @@ margin-left: -320px;
         margin-right:50px;
     }
 
-}
-.button{
-    width: 200px;
-    height: 40px;
-    background: linear-gradient(90deg, #e6007a, #003366);
-    color: #f0f0f0;
-    margin-top: 140px;
-    margin-left: 665px;
-    margin-bottom: 100px;
 }
 
