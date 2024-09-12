@@ -57,6 +57,14 @@ main {
     margin-bottom: -41.5%;
 }
 
+.btn-primary{
+    margin-left:42.5%;
+    margin-top: -15%;
+    background: linear-gradient(90deg, #e6007a, #0a78e6e3);
+    font-size: x-large;
+
+}
+
 /* footer */
 footer {
     background: linear-gradient(90deg, #e6007a, #0a78e6e3);
@@ -97,9 +105,10 @@ footer {
 }
 
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
-   .backimg{
 
-margin-top: 2%;}
+/* responsive */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
 }
 
