@@ -58,10 +58,14 @@ main {
 }
 
 .btn-primary{
-    margin-left:42.5%;
+    margin-left:41.5%;
     margin-top: -15%;
     background: linear-gradient(90deg, #e6007a, #0a78e6e3);
-    font-size: x-large;
+    font-size: xx-large;
+    border-radius: 900px;
+    height: 100px;
+    
+    width: 300px;
 
 }
 
