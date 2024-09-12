@@ -1,131 +1,127 @@
-/* Reset some default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-/* Navbar styling */
 .navbar {
-    background: linear-gradient(90deg, #e6007a, #003366);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    animation: slideDown 0.5s ease-in-out;
-    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2d2d2d;
 }
 
-#connect{
-    margin-right:80px;
+.navbar .logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
     text-decoration: none;
-    color:white;
-}
-#imgsdk{
-
-    width: 70px;
-    height: 70px;
-    border-radius: 70px;
-    margin-bottom: 5px;
-    margin-left: 7px;
+    font-size: 18px;
 }
 
-
-
-.button{
-    width: 200px;
-    height: 40px;
-    background: linear-gradient(90deg, #e6007a, #003366);
-    color: #f0f0f0;
-    margin-top: 140px;
-    margin-left: 678px;
-    margin-bottom: 100px;
-}
-
-
-/* Animation for navbar */
-@keyframes slideDown {
-    from {
-        top: -50px;
-        opacity: 0;
-    }
-    to {
-        top: 0;
-        opacity: 1;
-    }
-}
-
-/* Content styling */
-.content {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: auto auto ;
-    margin-left: 390px;
-}
-
-/* Footer styling */
-.footer {
-    background: linear-gradient(90deg, #e6007a, #003366);
+.hero {
+    background: url('path_to_background_image') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;
-    padding: 15px 0;
-    animation: fadeIn 1s ease-in-out;
 }
 
-/* Animation for footer */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
+.hero h1 {
+    font-size: 48px;
+}
+
+.features {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #1a1a1a;
+}
+
+footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer .footer-content {
+    font-size: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* Responsive styling */
-
-
-@media (max-width: 480px) {
-.content{
-
-    display: grid;
-    grid-template-columns: auto;
-   margin-left: 327px;
-}
-
-
-
-#m1{
-margin-left: -320px;
-}
-
-#m3{
-    margin-left: -320px;
-}
-
-
-    .divbutton{
-
-        margin-left: -600px;
+    .nav-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    #connect{
-        margin-right:50px;
+    .nav-links li {
+        margin: 10px 0;
     }
 
-}
+    .hero {
+        height: 300px;
+    }
 
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .buttons button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
