@@ -11,9 +11,21 @@ body {
     position: relative; /* Ensure the body is a positioned ancestor for absolute footer */
 }
 
+
+
+/* pre */
+.carousel-control-prev-icon{
+    background-color: rgb(36, 156, 242);
+    margin-left: 140px;}
+/* next */
+.carousel-control-next-icon{
+    background-color: rgb(118, 28, 160);margin-right: 190px;} 
+
+
+
+
 main {
     flex: 1; 
-    /* Ensures that the main content takes up available space */
 }
 
 .navbar {
@@ -36,9 +48,9 @@ main {
 
 /* img */
 .carousel-item {
-    width: 600px;
-    height: 400px;
-    margin-left: 500px;
+    width: 1100px;
+    height: 450px;
+    margin-left: 235px;
 }
 
 /* خط */
@@ -129,12 +141,12 @@ footer {
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
     .btn-primary{
-        margin-left:24.5%;
-        margin-top: -40%;
+        margin-left:37%;
+        margin-top: -93%;
         border-radius: 900px;
-        height: 100px;
+        height: 80px;
         
-        width: 300px;
+        width: 250px;
     
     
     }
@@ -143,13 +155,13 @@ footer {
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
     .btn-primary{
-        margin-left:29%;
-        margin-top: -40%;
+        margin-left:38%;
+        margin-top: -105%;
         border-radius: 600px;
-        height: 70px;
+        height: 65px;
         font-size: large;
         
-        width: 150px;
+        width: 140px;
 
     
     
