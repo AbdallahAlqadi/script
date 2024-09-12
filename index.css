@@ -1,12 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html, body {
+    height: 100%; 
+    margin: 0; 
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
+    position: relative; /* Ensure the body is a positioned ancestor for absolute footer */
+}
+
+main {
+    flex: 1; 
+    /* Ensures that the main content takes up available space */
 }
 
 .navbar {
@@ -15,7 +22,6 @@ body {
     align-items: center;
     padding: 10px 20px;
     background: linear-gradient(90deg, #e6007a, #0a78e6e3);
-    
 }
 
 .navbar .logo img {
@@ -23,48 +29,64 @@ body {
     border-radius: 50px;
 }
 
-.event-name {
-    background: linear-gradient(90deg, #0a78e6e3, #e6007a);
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* slider */
+.slider {
+    margin-top: 110px;
 }
 
-.event-name h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 5px;
+/* img */
+.carousel-item {
+    width: 600px;
+    height: 400px;
+    margin-left: 500px;
 }
 
-.event-name p {
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-top: 0;
-    font-style: italic;
-}
-
-
-
-
-
-
-
-  footer {
+/* خط */
+.colored-div {
+    width: 100%; 
+    height: 40px; 
     background: linear-gradient(90deg, #e6007a, #0a78e6e3);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+/* footer */
+footer {
+    background-color: #333;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-  }
-  
-
-footer .footer-content {
-    font-size: 16px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.footer-content {
+    text-align: center;
+}
 
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
 
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
