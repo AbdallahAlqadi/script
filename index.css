@@ -57,18 +57,32 @@ main {
     margin-bottom: -41.5%;
 }
 
-.btn-primary{
-    margin-left:41.5%;
+/* button */
+.btn-primary {
+    margin-left: 41.5%;
     margin-top: -35%;
     background: linear-gradient(90deg, #e6007a, #0a78e6e3);
     font-size: xx-large;
     border-radius: 900px;
     height: 100px;
-    
     width: 300px;
     box-shadow: inset;
-
+    animation: gradientShift 5s infinite; /* إضافة الحركة */
 }
+
+/* الحركة المخصصة */
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(90deg, #e6007a, #0a78e6e3);
+    }
+    50% {
+        background: linear-gradient(90deg, #0a78e6e3, #e6007a);
+    }
+    100% {
+        background: linear-gradient(90deg, #e6007a, #0a78e6e3);
+    }
+}
+
 
 /* footer */
 footer {
@@ -117,13 +131,27 @@ footer {
     .btn-primary{
         margin-left:24.5%;
         margin-top: -40%;
-        background: linear-gradient(90deg, #e6007a, #0a78e6e3);
-        font-size: x-large;
         border-radius: 900px;
         height: 100px;
         
         width: 300px;
-        box-shadow: inset;
+    
+    
+    }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+    .btn-primary{
+        margin-left:29%;
+        margin-top: -40%;
+        border-radius: 600px;
+        height: 70px;
+        font-size: large;
+        
+        width: 150px;
+
+    
     
     }
 }
