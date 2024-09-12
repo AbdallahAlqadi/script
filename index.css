@@ -149,46 +149,43 @@ footer {
 /* responsive */
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    /* تعديلات على الزر الرئيسي */
-    .btn-primary {
-        margin-left: 31%; /* تعديل التوسيط ليكون أكثر دقة */
-        margin-top: -30%; /* تعديل القيمة لتجنب التداخل */
-        border-radius: 50px; /* تعديل نصف القطر ليكون أكثر منطقية */
-        height: 60px; /* تقليص الارتفاع */
-        width: 200px; /* تقليص العرض */
+    .btn-primary{
+        margin-left:37%;
+        margin-top: -93%;
+        border-radius: 900px;
+        height: 80px;
+        
+        width: 250px;
     }
 
-    /* التحكم بحجم السلايدر */
+    /* بتحكم بحجم الكبسات */
     .slider {
-        width: 90%; /* زيادة العرض ليتناسب مع الشاشة */
-        margin-top: 50px; /* تقليص المسافة من الأعلى */
-        margin-left: auto;
-        margin-right: auto; /* توسيط السلايدر */
+        width: 85%; /* تقليص العرض ليتناسب مع حجم الشاشة */
+        margin-top: 90px;
+        margin-left: 5%;
     }
 
     .carousel-item {
-        width: 100%; /* جعل العرض 100% لتتناسب مع الشاشة */
-        height: 40vh; /* الارتفاع مناسب */
-        margin-left: 0; /* إلغاء المسافة من اليسار */
+        width: 74%; 
+        height: 40vh; 
+        margin-left: 10%;
+       
+       
     }
 
     .carousel-inner {
         height: 50vh; 
-        margin-left: auto; /* توسيط الـ carousel */
-        margin-right: auto;
-        margin-bottom: 0; /* إزالة الهامش السفلي السالب */
-        width: 100%; /* جعل العرض 100% */
-    }
+margin-left: 50px;  
+margin-bottom: -141px; 
+width: 550px; }
     
     .carousel-control-prev-icon, 
     .carousel-control-next-icon {
-        margin-left: 0; 
+        margin-left: 80%; 
         margin-right: 0;
         background-color: #e6007a;
     }
 }
-
-
 
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
