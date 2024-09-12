@@ -16,7 +16,8 @@ body {
 /* pre */
 .carousel-control-prev-icon{
     background-color: rgb(118, 28, 160);
-    margin-left: 110px;}
+    margin-left: 110px;
+}
 /* next */
 .carousel-control-next-icon{
     background-color: rgb(118, 28, 160);
@@ -148,17 +149,46 @@ footer {
 /* responsive */
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    .btn-primary{
-        margin-left:37%;
-        margin-top: -93%;
-        border-radius: 900px;
-        height: 80px;
-        
-        width: 250px;
+    /* تعديلات على الزر الرئيسي */
+    .btn-primary {
+        margin-left: 31%; /* تعديل التوسيط ليكون أكثر دقة */
+        margin-top: -30%; /* تعديل القيمة لتجنب التداخل */
+        border-radius: 50px; /* تعديل نصف القطر ليكون أكثر منطقية */
+        height: 60px; /* تقليص الارتفاع */
+        width: 200px; /* تقليص العرض */
+    }
+
+    /* التحكم بحجم السلايدر */
+    .slider {
+        width: 90%; /* زيادة العرض ليتناسب مع الشاشة */
+        margin-top: 50px; /* تقليص المسافة من الأعلى */
+        margin-left: auto;
+        margin-right: auto; /* توسيط السلايدر */
+    }
+
+    .carousel-item {
+        width: 100%; /* جعل العرض 100% لتتناسب مع الشاشة */
+        height: 40vh; /* الارتفاع مناسب */
+        margin-left: 0; /* إلغاء المسافة من اليسار */
+    }
+
+    .carousel-inner {
+        height: 50vh; 
+        margin-left: auto; /* توسيط الـ carousel */
+        margin-right: auto;
+        margin-bottom: 0; /* إزالة الهامش السفلي السالب */
+        width: 100%; /* جعل العرض 100% */
+    }
     
-    
+    .carousel-control-prev-icon, 
+    .carousel-control-next-icon {
+        margin-left: 0; 
+        margin-right: 0;
+        background-color: #e6007a;
     }
 }
+
+
 
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
@@ -171,8 +201,28 @@ footer {
         
         width: 140px;
 
+    }
+
+    .slider {
+        width: 100%; /* عرض كامل للشاشة */
+        margin-top: 80px; /* تقليل المسافة من الأعلى */
+    }
+
+    .carousel-item {
+        width: 100%; /* تغطية العرض الكامل */
+        height: 35vh; /* ارتفاع نسبي للشاشة */
+    }
+
+    .carousel-inner {
+        height: 35vh;
+        margin: 0 auto; /* محاذاة محتوى carousel ليكون مركزيًا */
+    }
     
-    
+    .carousel-control-prev-icon, 
+    .carousel-control-next-icon {
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #e6007a;
     }
 }
 
