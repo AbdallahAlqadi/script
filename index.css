@@ -15,14 +15,32 @@ body {
 
 /* pre */
 .carousel-control-prev-icon{
-    background-color: rgb(36, 156, 242);
-    margin-left: 140px;}
+    background-color: rgb(118, 28, 160);
+    margin-left: 110px;}
 /* next */
 .carousel-control-next-icon{
-    background-color: rgb(118, 28, 160);margin-right: 190px;} 
+    background-color: rgb(118, 28, 160);
+    margin-right: 150px;
+} 
 
 
+    
+/* slider */
+.slider {
+    margin-top: 110px;
+}
 
+/* img */
+.carousel-item {
+    width: 700px;
+    height: 450px;
+    margin-left: 235px;
+}
+
+.carousel-inner{
+    height: 700px;
+    margin-left: 175px;
+}
 
 main {
     flex: 1; 
@@ -41,17 +59,7 @@ main {
     border-radius: 50px;
 }
 
-/* slider */
-.slider {
-    margin-top: 110px;
-}
 
-/* img */
-.carousel-item {
-    width: 1100px;
-    height: 450px;
-    margin-left: 235px;
-}
 
 /* خط */
 .colored-div {
