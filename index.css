@@ -233,7 +233,6 @@ width: 550px; }
         border-radius: 600px;
         height: 15%;
         font-size: smaller;
-        
         width:40%;
 
     }
@@ -243,7 +242,6 @@ width: 550px; }
         margin-top: 10px;
         margin-left: 5%;
         
-        
     }
 
     .carousel-item {
@@ -251,6 +249,7 @@ width: 550px; }
         height: 70%; 
         margin-left: 14%;
         margin-top:27%;
+        
     }
 
     .carousel-inner {
