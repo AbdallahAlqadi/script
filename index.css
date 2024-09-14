@@ -206,8 +206,9 @@ width: 550px; }
     }
 
     .carousel-item {
-        width: 100%; /* تغطية العرض الكامل */
+        width: 60%; /* تغطية العرض الكامل */
         height: 35vh; /* ارتفاع نسبي للشاشة */
+        margin-left: 110px;
     }
 
     .carousel-inner {
