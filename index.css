@@ -279,5 +279,14 @@ width: 550px; }
     .backimg{
         margin-bottom: 30%;
     }
+
+    footer{
+        font-size: 85%;
+        padding-top: 6%;
+    }
+    .ooter-links{
+        font-size: 85%;
+
+    }
 }
 
