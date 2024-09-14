@@ -223,7 +223,7 @@ width: 550px; }
         margin-top: -245%;
         border-radius: 600px;
         height: 60px;
-        font-size: large;
+        font-size: smaller;
         
         width: 140px;
 
@@ -240,7 +240,7 @@ width: 550px; }
         height: 35vh; /* ارتفاع نسبي للشاشة */
         /* margin-left: 110px; */
         margin-left: 24%;
-        margin-top:23%;
+        margin-top:27%;
     }
 
     .carousel-inner {
@@ -257,9 +257,9 @@ width: 550px; }
 
     .navbar h3 {
         color: white;
-      font-size: large;
-        margin-right: 12%;
-        margin-top: 4%;
+      font-size: small;
+        margin-right: 15%;
+        margin-top: 2%;
     }
 
 
