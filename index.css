@@ -19,6 +19,8 @@ body {
     margin-left: 110px;
     border-radius: 50px;
     box-shadow: inset;
+    margin-top: 60%;
+
 
 }
 /* next */
@@ -27,28 +29,35 @@ body {
     margin-right: 150px;
     border-radius: 50px;
     box-shadow: inset;
+    margin-top: 60%;
 
 } 
 
 
     
-/* slider */
 .slider {
-    margin-top: 110px;
+    margin-top: 6%;
+    width: 100%; /* تأكد من أن slider يملأ مساحة الـ body */
 }
 
 /* img */
 .carousel-item {
-    width: 1100px;
-    height: 500px;
-    margin-left: 50px;
+    width: 100%; /* عرض بنسبة 100% */
+    max-width: 1100px; /* أقصى عرض ليكون متجاوبًا */
+    height: auto; /* لجعل الارتفاع متجاوبًا بناءً على عرض الصورة */
+   margin-left: 14%;
     margin-top: 130px;
 }
 
-.carousel-inner{
-    height: 700px;
-    margin-left: 175px;
+.carousel-inner {
+    max-width: 100%; /* جعل العرض بنسبة 100% */
+    height: auto; /* الارتفاع متجاوب بناءً على محتوى الصور */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 
 main {
     flex: 1; 
