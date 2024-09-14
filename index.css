@@ -256,8 +256,9 @@ width: 550px; }
     .carousel-control-next-icon {
         margin-left: 10%;
         margin-right: 20%;
-        background-color: #e6007a;
+        background-color: #e6007bb4;
         border-radius: 50%;
+        margin-top: 70%;
     }
 
     .navbar h3 {
