@@ -248,11 +248,12 @@ width: 550px; }
         width: 70%; 
         height: 70%; 
         margin-left: 14%;
-        margin-top: 27%;
-        transform: scale(1.2); 
-        transition: transform 0.5s ease;
+        margin-top:27%;
+    
     }
 
+
+  
     .carousel-inner {
         height: 55%;
         margin: 0 auto; 
