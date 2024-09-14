@@ -126,7 +126,7 @@ main {
         background: linear-gradient(90deg, #e6007a, #0a78e6e3);
     }
     50% {
-        background: linear-gradient(90deg, #0a78e6e3, #e6007a);
+        background: linear-gradient(90deg, #e6007a, #0a78e6e3);
     }
     100% {
         background: linear-gradient(90deg, #e6007a, #0a78e6e3);
