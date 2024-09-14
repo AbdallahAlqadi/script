@@ -203,6 +203,7 @@ width: 550px; }
     .slider {
         width: 100%; /* عرض كامل للشاشة */
         margin-top: 80px; /* تقليل المسافة من الأعلى */
+        
     }
 
     .carousel-item {
@@ -214,7 +215,7 @@ width: 550px; }
     }
 
     .carousel-inner {
-        height: 35vh;
+        height: 60%;
         margin: 0 auto; /* محاذاة محتوى carousel ليكون مركزيًا */
     }
     
