@@ -237,17 +237,16 @@ width: 550px; }
     }
 
     .carousel-item {
-        width: 75%; /* تغطية العرض الكامل */
+        width: 70%; /* تغطية العرض الكامل */
         height: 40vh; /* ارتفاع نسبي للشاشة */
         /* margin-left: 110px; */
-        margin-left: 11.5%;
+        margin-left: 14%;
         margin-top:27%;
     }
 
     .carousel-inner {
-        height: 60%;
-        margin: 0 auto;
-        width: 85%; /* محاذاة محتوى carousel ليكون مركزيًا */
+        height: 55%;
+        margin: 0 auto; /* محاذاة محتوى carousel ليكون مركزيًا */
       
     }
     
