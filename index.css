@@ -230,28 +230,28 @@ width: 550px; }
     }
 
     .slider {
-        width: 100%; /* عرض كامل للشاشة */
+        width: 90%; /* عرض كامل للشاشة */
         margin-top: 80px; /* تقليل المسافة من الأعلى */
         
     }
 
     .carousel-item {
-        width: 60%; /* تغطية العرض الكامل */
+        width: 50%; /* تغطية العرض الكامل */
         height: 35vh; /* ارتفاع نسبي للشاشة */
         /* margin-left: 110px; */
-        margin-left: 20%;
-        margin-top: 20%;
+        margin-left: 24%;
+        margin-top:23%;
     }
 
     .carousel-inner {
-        height: 60%;
+        height: 55%;
         margin: 0 auto; /* محاذاة محتوى carousel ليكون مركزيًا */
     }
     
     .carousel-control-prev-icon, 
     .carousel-control-next-icon {
         margin-left: 10%;
-        margin-right: 10%;
+        margin-right: 20%;
         background-color: #e6007a;
     }
 
