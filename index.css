@@ -189,14 +189,14 @@ footer {
 
     /* بتحكم بحجم الكبسات */
     .slider {
-        width: 85%; /* تقليص العرض ليتناسب مع حجم الشاشة */
+        width: 85%; 
         margin-top: 110px;
         margin-left: 15%;
     }
 
     .carousel-item {
         width: 74%; 
-        height: 40vh; 
+        height: 40%; 
         margin-left: 10%;
        
        
@@ -232,23 +232,22 @@ width: 550px; }
     }
 
     .slider {
-        width: 90%; /* عرض كامل للشاشة */
-        margin-top: 80px; /* تقليل المسافة من الأعلى */
+        width: 90%; 
+        margin-top: 80px;
         margin-left: 5%;
         
     }
 
     .carousel-item {
-        width: 70%; /* تغطية العرض الكامل */
-        height: 40vh; /* ارتفاع نسبي للشاشة */
-        /* margin-left: 110px; */
+        width: 70%; 
+        height: 40%; 
         margin-left: 14%;
         margin-top:27%;
     }
 
     .carousel-inner {
         height: 55%;
-        margin: 0 auto; /* محاذاة محتوى carousel ليكون مركزيًا */
+        margin: 0 auto; 
       
     }
     
