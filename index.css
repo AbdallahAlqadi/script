@@ -59,7 +59,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: linear-gradient(90deg, #e6007a, #1881e9e3);
+    background: linear-gradient(90deg, #e6007a, #0a78e6e3);
 }
 
 .navbar .logo img {
@@ -102,7 +102,7 @@ main {
 .colored-div {
     width: 100%; 
     height: 40px; 
-    background: linear-gradient(90deg, #e6007a, #1881e9e3);
+    background: linear-gradient(90deg, #e6007a, #0a78e6e3);
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -118,7 +118,7 @@ main {
 .btn-primary {
     margin-left: 41.5%;
     margin-top: -90%;
-    background: linear-gradient(90deg, #e6007a, #1881e9e3);
+    background: linear-gradient(90deg, #e6007a, #0a78e6e3);
     font-size: xx-large;
     border-radius: 900px;
     height: 100px;
@@ -130,13 +130,13 @@ main {
 /* الحركة المخصصة */
 @keyframes gradientShift {
     0% {
-        background: linear-gradient(90deg, #e6007a, #1881e9e3);
+        background: linear-gradient(90deg, #e6007a, #0a78e6e3);
     }
     50% {
-        background: linear-gradient(90deg, #e6007a, #1881e9e3);
+        background: linear-gradient(90deg, #e6007a, #0a78e6e3);
     }
     100% {
-        background: linear-gradient(90deg, #e6007a, #1881e9e3);
+        background: linear-gradient(90deg, #e6007a, #0a78e6e3);
     }
 }
 
@@ -182,17 +182,50 @@ footer {
 
 
 
-/* responsive  */
+/* responsive */
 
-
-
-/* 576-767 */
 @media screen and (min-width: 576px) and (max-width: 767px) {
+    .btn-primary{
+        margin-left:37%;
+        margin-top: -93%;
+        border-radius: 900px;
+        height: 80px;
+        
+        width: 250px;
+    }
+
+    /* بتحكم بحجم الكبسات */
+    .slider {
+        width: 85%; 
+        margin-top: 110px;
+        margin-left: 15%;
+    }
+
+    .carousel-item {
+        width: 74%; 
+        height: 40%; 
+        margin-left: 10%;
+       
+       
+    }
+
+    .carousel-inner {
+        height: 50vh; 
+margin-left: 50px;  
+margin-bottom: -141px; 
+width: 550px; }
     
+    .carousel-control-prev-icon, 
+    .carousel-control-next-icon {
+        margin-left: 80%; 
+        margin-right: 0;
+        background-color: #e6007bb8;
+    }
 }
 
 
-/* 0-575 */
+
+
 @media screen and (min-width: 0px) and (max-width: 575px) {
     .btn-primary{
         margin-left:36%;
