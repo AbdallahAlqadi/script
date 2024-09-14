@@ -182,50 +182,17 @@ footer {
 
 
 
-/* responsive */
+/* responsive  */
 
+
+
+/* 576-767 */
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    .btn-primary{
-        margin-left:37%;
-        margin-top: -93%;
-        border-radius: 900px;
-        height: 80px;
-        
-        width: 250px;
-    }
-
-    /* بتحكم بحجم الكبسات */
-    .slider {
-        width: 85%; 
-        margin-top: 110px;
-        margin-left: 15%;
-    }
-
-    .carousel-item {
-        width: 74%; 
-        height: 40%; 
-        margin-left: 10%;
-       
-       
-    }
-
-    .carousel-inner {
-        height: 50vh; 
-margin-left: 50px;  
-margin-bottom: -141px; 
-width: 550px; }
     
-    .carousel-control-prev-icon, 
-    .carousel-control-next-icon {
-        margin-left: 80%; 
-        margin-right: 0;
-        background-color: #e6007bb8;
-    }
 }
 
 
-
-
+/* 0-575 */
 @media screen and (min-width: 0px) and (max-width: 575px) {
     .btn-primary{
         margin-left:36%;
