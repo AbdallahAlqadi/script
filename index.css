@@ -190,7 +190,7 @@ width: 550px; }
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
     .btn-primary{
-        margin-left:38%;
+        margin-left:36%;
         margin-top: -105%;
         border-radius: 600px;
         height: 65px;
