@@ -61,6 +61,35 @@ main {
 }
 
 
+.navbar h3 {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    transform: scale(1.1); /* تكبير النص قليلاً */
+    text-shadow: 0 0 10px  #008cff;
+    margin-right: 38%;
+}
+
+
+/* Adding fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.navbar h3 {
+    animation: fadeIn 1s ease-in-out;
+}
+
 
 /* خط */
 .colored-div {
