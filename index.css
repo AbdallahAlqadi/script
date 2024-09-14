@@ -247,6 +247,7 @@ width: 550px; }
     .carousel-inner {
         height: 55%;
         margin: 0 auto; /* محاذاة محتوى carousel ليكون مركزيًا */
+      
     }
     
     .carousel-control-prev-icon, 
