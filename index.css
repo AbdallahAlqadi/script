@@ -33,9 +33,10 @@ body {
 
 /* img */
 .carousel-item {
-    width: 700px;
-    height: 450px;
-    margin-left: 235px;
+    width: 1100px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 130px;
 }
 
 .carousel-inner{
