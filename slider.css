@@ -16,10 +16,11 @@ body {
 
 .carousel {
     perspective: 1200px; /* زيادة البعد لإعطاء عمق أكثر */
-    width: 80%;
-    max-width: 400px; /* تحديد الحد الأقصى للعرض */
+    width: 70%;
+    max-width: 500px; /* تحديد الحد الأقصى للعرض */
     display: flex;
     justify-content: center;
+    height: 100%;
     align-items: center;
 }
 
