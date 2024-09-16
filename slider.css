@@ -15,29 +15,29 @@ body {
 }
 
 .carousel {
-    perspective: 700px; /* زيادة البعد لإعطاء عمق أكثر */
-    width: 70%;
-    max-width: 500px; /* تحديد الحد الأقصى للعرض */
+    perspective: 1200px; /* زيادة البعد لإعطاء عمق أكثر */
+    width: 80%;
+    max-width: 400px; /* تحديد الحد الأقصى للعرض */
     display: flex;
     justify-content: center;
-    height: 100%;
     align-items: center;
 }
 
 .image-container {
     width: 100%;
-    height: 30%;
+    height: 300px;
     position: relative;
     transform-style: preserve-3d;
     animation: rotate 12s infinite linear;
     transition: transform 0.5s ease-in-out;
+    
 }
 
 /* إعدادات الصور */
 .image-container img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 120%;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
@@ -75,23 +75,12 @@ body {
 /* استجابة التصميم لمختلف الشاشات */
 @media (max-width: 768px) {
     .image-container {
-        height: 50%;
-      
-    }
-
-    .carousel{
-        width: 70%;
+        height: 250px;
     }
 }
-
 
 @media (max-width: 480px) {
     .image-container {
         height: 200px;
-        width: 140%;
-
-    }
-    .carousel{
-        width: 50%;
     }
 }
