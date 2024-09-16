@@ -15,7 +15,7 @@ body {
 }
 
 .carousel {
-    perspective: 1200px; /* زيادة البعد لإعطاء عمق أكثر */
+    perspective: 700px; /* زيادة البعد لإعطاء عمق أكثر */
     width: 70%;
     max-width: 500px; /* تحديد الحد الأقصى للعرض */
     display: flex;
@@ -88,10 +88,10 @@ body {
 @media (max-width: 480px) {
     .image-container {
         height: 200px;
-        width: 540%;
+        width: 140%;
 
     }
     .carousel{
-        width: 65%;
+        width: 50%;
     }
 }
