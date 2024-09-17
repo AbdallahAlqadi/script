@@ -98,7 +98,8 @@ body {
 /* الهواتف المحمولة */
 @media (max-width: 576px) {
     .image-container {
-        height: 180px;
+        height: 190px;
+    width: 170px;
     }
 
     .carousel {
