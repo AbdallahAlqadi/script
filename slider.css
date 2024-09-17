@@ -15,12 +15,13 @@ body {
 }
 
 .carousel {
-    perspective: 1200px; /* زيادة البعد لإعطاء عمق أكثر */
-    width: 80%;
-    max-width: 400px; /* تحديد الحد الأقصى للعرض */
+    perspective: 1200px; /* زيادة العمق لإعطاء تأثير 3D */
+    width: 90%; /* زيادة العرض بشكل طفيف للتوافق مع الشاشات الأصغر */
+    max-width: 500px; /* جعل الحد الأقصى أكبر قليلاً */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .image-container {
@@ -30,14 +31,13 @@ body {
     transform-style: preserve-3d;
     animation: rotate 12s infinite linear;
     transition: transform 0.5s ease-in-out;
-    
 }
 
 /* إعدادات الصور */
 .image-container img {
     position: absolute;
-    width: 150%;
-    height: 120%;
+    width: 100%; /* تعديل عرض الصور لتتناسب مع الحاوية */
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
@@ -77,10 +77,64 @@ body {
     .image-container {
         height: 250px;
     }
+
+    .carousel {
+        max-width: 350px; /* تقليل الحد الأقصى */
+    }
 }
 
 @media (max-width: 480px) {
     .image-container {
         height: 200px;
+    }
+
+    .carousel {
+        max-width: 300px;
+    }
+}
+
+/* استجابة لأحجام الشاشات الأخرى */
+
+/* الهواتف المحمولة */
+@media (max-width: 576px) {
+    .image-container {
+        height: 180px;
+    }
+
+    .carousel {
+        max-width: 280px;
+    }
+}
+
+/* الأجهزة اللوحية */
+@media (min-width: 768px) and (max-width: 992px) {
+    .image-container {
+        height: 270px;
+    }
+
+    .carousel {
+        max-width: 400px;
+    }
+}
+
+/* أجهزة اللابتوب الصغيرة */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .image-container {
+        height: 320px;
+    }
+
+    .carousel {
+        max-width: 450px;
+    }
+}
+
+/* أجهزة الكمبيوتر المكتبية وأجهزة اللابتوب الكبيرة */
+@media (min-width: 1200px) {
+    .image-container {
+        height: 350px;
+    }
+
+    .carousel {
+        max-width: 500px;
     }
 }
