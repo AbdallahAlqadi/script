@@ -98,7 +98,6 @@
 
         // Function to translate content
         function translateTo(lang) {
-            // Apply the translation
             document.getElementById('expo-title').textContent = translations[lang].expoTitle;
             document.getElementById('register-btn').textContent = translations[lang].registerBtn;
             document.getElementById('footer-text').innerHTML = translations[lang].footerText;
@@ -109,13 +108,12 @@
             // Store selected language in localStorage
             localStorage.setItem('selectedLanguage', lang);
 
-            // Update the select option
             document.getElementById('language-select').value = lang;
         }
 
-        // On page load, check for saved language in localStorage
+     
         window.onload = function() {
-            const savedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // Default to 'en' if no language is saved
+            const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
             translateTo(savedLanguage);
         };
     </script>
