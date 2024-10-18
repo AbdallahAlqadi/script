@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html lang="ar">
-<head><link rel="stylesheet" href="n.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عرض الفيديو</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    .custom-file-upload {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .custom-file-upload:hover {
+      background-color: #0056b3;
+    }
+    input[type="file"] {
+      display: none;
+    }
+    #videoContainer video {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
 
-
-    <body>
-        
-  
-  <form action="">
-    <input type="file" id="file"/>
+  <form>
+    <label for="file" class="custom-file-upload">
+      اختر فيديو
+    </label>
+    <input type="file" id="file" accept="video/*"/>
   </form>
 
-  <div id="inner">
+  <div id="videoContainer"></div>
 
-  </div>
-   
-  <script src="n.js"></script>
+  <script>
+    const fileInput = document.getElementById('file');
+    const videoContainer = document.getElementById('videoContainer');
+
+    fileInput.addEventListener('change', () => {
+      const file = fileInput.files[0];
+      if (file) {
+        const videoUrl = URL.createObjectURL(file);
+        const videoElement = document.createElement('video');
+        videoElement.setAttribute('controls', '');
+
+        const sourceElement = document.createElement('source');
+        sourceElement.src = videoUrl;
+        sourceElement.type = file.type;
+
+        videoElement.appendChild(sourceElement);
+        videoContainer.innerHTML = ''; // لتفريغ المحتوى السابق
+        videoContainer.appendChild(videoElement);
+      }
+    });
+  </script>
+  
 </body>
 </html>
