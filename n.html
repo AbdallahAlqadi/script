@@ -14,7 +14,7 @@
     .custom-file-upload {
       display: inline-block;
       padding: 10px 20px;
-      background-color: #007bff;
+      background-color: #51ff00;
       color: white;
       border-radius: 5px;
       cursor: pointer;
@@ -50,20 +50,18 @@
 
   <script>
     document.getElementById('file').addEventListener('change', function(event) {
-        var file = event.target.files[0]; // Get the first file from the input
+        var file = event.target.files[0]; // الحصول على الملف الأول
         var videoContainer = document.getElementById('videoContainer');
-    
-        
-            var fileURL = URL.createObjectURL(file); 
-           // Create a URL for the selected video file
-            alert(fileURL)
-            // videoContainer.innerHTML = `
-            //   <video width="600" controls>
-            //     <source src="${fileURL}" type="video/mp4">
-            //     متصفحك لا يدعم تشغيل الفيديو.
-            //   </video>`;
-        
+
+        if (file) {
+            var fileURL = URL.createObjectURL(file); // إنشاء رابط للفيديو
+            videoContainer.innerHTML = `
+                <video width="500" controls>
+                    <source src="${fileURL}" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>`;
+        }
     });
-    </script>
+</script>
 </body>
 </html>
