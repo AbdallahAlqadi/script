@@ -1,62 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
 
-form {
-    margin-bottom: 20px;
-}
+ 
 
-input[type="text"], input[type="url"] {
-    width: calc(50% - 20px);
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
+  .custom-file-upload {
+    display: inline-block;
     padding: 10px 20px;
-    background-color: #5cb85c;
-    color: white;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #4cae4c;
-}
-
-.video-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: #4CAF50;
+    color: white;
     border-radius: 5px;
-    margin: 10px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease;
+  }
 
-.card video {
-    width: 100%;
-}
+  .custom-file-upload:hover {
+    background-color: #45a049;
+  }
 
-.card h3 {
-    padding: 10px;
-    font-size: 1.2em;
-}
+  .custom-file-upload:active {
+    background-color: #3e8e41;
+  }
